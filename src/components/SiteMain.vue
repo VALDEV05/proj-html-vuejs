@@ -17,9 +17,41 @@
                   </ul>
               </div>
               <div class="register">
-                  <button type="button" class="mt-4 btn btn_register text-uppercase">register online</button>
+                  <button type="button" class="btn btn_register text-uppercase">register online</button>
               </div>
           </div>
+    
+    
+   
+    </div>
+    <div class="section_card container">
+        <div class="row mt-5">
+            <div class="col card_main d-flex">
+                <img src="../assets/img/trophy-solid.svg" alt="trophy">
+                <div id="text_card" class="mx-4">
+                    <p class="title_card text-uppercase">Who we are</p>
+                    <p class="text-muted">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectutyr estat lobo rtis. Cum sociis natoque.</p>
+                    <p><a href="#" class="learn_more_font">Learn More</a></p>
+                </div>
+            </div>
+            <div class="col card_main d-flex">
+                <img src="../assets/img/bolt-solid.svg" alt="bolt">
+                <div id="text_card" class="mx-4">
+                    <p class="title_card text-uppercase">Who we are</p>
+                    <p class="text-muted">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectutyr estat lobo rtis. Cum sociis natoque.</p>
+                    <p><a href="#" class="learn_more_font">Learn More</a></p>
+                </div>
+
+            </div>
+            <div class="col card_main d-flex">
+                <img src="../assets/img/question-solid.svg" alt="question">
+                <div id="text_card" class="mx-4">
+                    <p class="title_card text-uppercase">Who we are</p>
+                    <p class="text-muted">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectutyr estat lobo rtis. Cum sociis natoque.</p>
+                    <p><a href="#" class="text-decoration-none learn_more_font">Learn More</a></p>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
   <!-- /siteMain -->
