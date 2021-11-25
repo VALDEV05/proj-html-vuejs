@@ -5,7 +5,7 @@
 }
 
 #app {
-    background-color: white;
+    background-color: $white-color;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
@@ -13,7 +13,8 @@
 a {
     color: black;
     &:hover {
-        color: red;
-        border-bottom: 3px solid red;
+        color: $scarlet-red-color;
+        padding-bottom: 10px;
+        border-bottom: 3px solid $scarlet-red-color;
     }
 }

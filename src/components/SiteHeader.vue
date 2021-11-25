@@ -17,7 +17,6 @@
                     <li class="px-3"><a class="text-uppercase text-decoration-none" href="#">shortcodes</a></li>
                     <li id="separate" class="px-3">|</li>
                     <li class="px-3"><a class="text-uppercase text-decoration-none" href="#"><img src="@/assets/img/search-solid.svg" alt=""></a></li>
-
                 </ul>
             </div>
 
