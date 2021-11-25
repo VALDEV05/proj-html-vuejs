@@ -19,7 +19,7 @@
     }
 }
 
-#jumbotron {
+#jumbotron_socialNetwork {
     background-image: url('./assets/img/slider-1-bg.jpg');
     width: 100vw;
     height: 700px;
@@ -46,7 +46,6 @@
 
 .section_card {
     .card_main {
-        height: 300px;
         width: 33.33%;
         img {
             height: 50px;
@@ -65,4 +64,13 @@
             }
         }
     }
+}
+
+#jumbotron_countdown {
+    background-image: url('./assets/img/coutdown-bg1.jpg');
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
 }

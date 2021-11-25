@@ -1,6 +1,6 @@
 <template>
   <div id="siteMain"> 
-      <div id="jumbotron" class="d-flex align-items-center"> 
+      <div id="jumbotron_socialNetwork" class="d-flex align-items-center"> 
           <div class="container text-center text-uppercase">
               <div class="title text-light">
                   <p  class="m-0 title-sm">Conference on</p>
@@ -53,6 +53,7 @@
             </div>
         </div>
     </div>
+    <div id="jumbotron_countdown" class="jumbotronClass mt-5"></div>
   </div>
   <!-- /siteMain -->
 </template>
