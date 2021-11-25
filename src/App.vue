@@ -23,5 +23,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import '@/assets/style/common.scss';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
 </style>
