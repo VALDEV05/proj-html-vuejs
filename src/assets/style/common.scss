@@ -10,11 +10,34 @@
     font-weight: 500;
 }
 
-a {
+.link_header {
     color: black;
     &:hover {
         color: $scarlet-red-color;
         padding-bottom: 10px;
         border-bottom: 3px solid $scarlet-red-color;
+    }
+}
+
+#jumbotron {
+    background-image: url('./assets/img/slider-1-bg.jpg');
+    width: 100vw;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    .container {
+        height: 70%;
+        .title-sm {
+            font-size: 50px;
+        }
+        .title-lg {
+            font-size: 90px;
+        }
+        .btn_register {
+            background-color: $scarlet-red-color;
+            color: $white-color;
+            padding: 15px 30px;
+        }
     }
 }
