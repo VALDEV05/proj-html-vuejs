@@ -1,7 +1,7 @@
 <template>
   <div id="siteMain"> 
       <div id="jumbotron_socialNetwork" class="d-flex align-items-center"> 
-          <div class="container text-center text-uppercase">
+          <div class="container-jumbo text-center text-uppercase">
               <div class="title text-light">
                   <p  class="m-0 title-sm">Conference on</p>
                   <p class="m-0 title-lg fw-bold">social networks</p>
@@ -53,7 +53,53 @@
             </div>
         </div>
     </div>
-    <div id="jumbotron_countdown" class="jumbotronClass mt-5"></div>
+    <div id="jumbotron_countdown" class="jumbotronClass mt-5">
+        <div class="container-jumbo">
+            <div class="row pt-5">
+                <div class="col-3 countdown d-flex justify-content-center align-items-center">
+                    <div class="square d-flex flex-column align-items-center justify-content-center">
+                        <p id="number" class="m-0">
+                             3399  
+                        </p>
+                        <p class="text_countodown text-uppercase">days</p>
+                    </div>
+                </div>
+                <div class="col-3 countdown d-flex justify-content-center align-items-center">
+                    <div class="square d-flex flex-column align-items-center justify-content-center">
+                        <p id="number" class="m-0">
+                             17   
+                        </p>
+                        <p class="text_countodown text-uppercase">hours</p>
+                    </div>
+                </div>
+                <div class="col-3 countdown d-flex justify-content-center align-items-center">
+                    <div class="square d-flex flex-column align-items-center justify-content-center">
+                        <p id="number" class="m-0">
+                             28   
+                        </p>
+                        <p class="text_countodown text-uppercase">mins</p>
+                    </div>
+                </div>
+                <div class="col-3 countdown d-flex justify-content-center align-items-center">
+                    <div class="square d-flex flex-column align-items-center justify-content-center">
+                        <p id="number" class="m-0">
+                             17   
+                        </p>
+                        <p class="text_countodown text-uppercase">secs</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="text_jumbo_countdown" class="text-uppercase fw-bold" >
+                subscribe for updatae
+                <div id="input_countdown" class="mt-4 d-flex align-items-center justify-content-center   ">
+                    <input type="text" id="input_countdown">
+                <button class="btn_subscribe">subcribe</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
   </div>
   <!-- /siteMain -->
 </template>
@@ -75,7 +121,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
-    .container {
+    .container-jumbo {
         height: 50%;
         .title-sm {
             font-size: 50px;
@@ -92,7 +138,6 @@ export default {
         }
     }
 }
-
 .section_card {
     .card_main {
         width: 33.33%;
@@ -122,5 +167,46 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
+    .container-jumbo{
+        height: 100%;
+        .countdown{
+            height: 200px;
+            color: $white-color;
+            .square{
+                height: 170px;
+                width: 220px;
+                background-color: rgba($black-color, $alpha: 0.5);
+                border-radius: 15px;
+                font-weight: 700;
+                #number{
+                    font-size: 80px;
+                }
+                .text_countodown{
+                    font-size: 30px;
+                }
+                &:hover{
+                    background-color: rgba($black-color, $alpha: 0.8);
+                    box-shadow: 10px 10px 5px  black;
+                    height: 190px;
+                    width: 250px;   
+                    transition: height 4s, width 2s;
+                }
+            } 
+        }
+        #text_jumbo_countdown{
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;}
+        }
+        .btn_subscribe {
+            font-size: 24px;
+            margin-left: 15px;
+            padding: 15px 20px;
+            background: red;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+        }
+
 }
 </style>
