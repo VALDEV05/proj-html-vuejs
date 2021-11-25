@@ -67,5 +67,60 @@ export default {
 </script>
 
 <style  lang="scss">
+@import '@/assets/style/variables.scss';
+#jumbotron_socialNetwork {
+    background-image: url('../assets/img/slider-1-bg.jpg');
+    width: 100vw;
+    height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    .container {
+        height: 50%;
+        .title-sm {
+            font-size: 50px;
+        }
+        .title-lg {
+            font-size: 90px;
+            margin-top: -16px;
+        }
+        .btn_register {
+            margin-top: 30px !important;
+            background-color: $scarlet-red-color;
+            color: $white-color;
+            padding: 15px 40px;
+        }
+    }
+}
 
+.section_card {
+    .card_main {
+        width: 33.33%;
+        img {
+            height: 50px;
+            width: 50px;
+            color: $icon-gray;
+        }
+        #text_card {
+            .title_card {
+                font-size: 25px;
+                font-weight: bold;
+            }
+            p a {
+                text-decoration: none;
+                color: $scarlet-red-color;
+                font-family: 'Bitter', serif;
+            }
+        }
+    }
+}
+
+#jumbotron_countdown {
+    background-image: url('../assets/img/coutdown-bg1.jpg');
+    width: 100vw;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
 </style>
