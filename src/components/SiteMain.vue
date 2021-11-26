@@ -34,10 +34,10 @@
         <recentNews/>
     </div>
     <!-- /#recent_news -->
-    <div id="tickets">
-        tickets
+    <div id="ticketSection">
+        <ticketSection/>
     </div>
-    <!-- /#tickets -->
+    <!-- /#ticketSection -->
     <div id="presentation">
         presentation
     </div>
@@ -58,6 +58,7 @@ import jumbotronSocialNetwork from '@/components/jumbotronSocialNetwork.vue'
 import JumbotronCountdown from '@/components/jumbotronCountdown.vue'
 import location from '@/components/location.vue'
 import recentNews from '@/components/recentNews.vue'
+import ticketSection from '@/components/ticketSection.vue'
 
 
 export default {
@@ -68,7 +69,8 @@ export default {
         jumbotronSocialNetwork,
         JumbotronCountdown,
         location,
-        recentNews
+        recentNews,
+        ticketSection,
 
     },
     props:{
