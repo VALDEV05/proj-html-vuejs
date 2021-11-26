@@ -1,7 +1,7 @@
 <template>
   <div id="jumbotron">
-      <div class="container-jumbo pt-5">
-          <h1 class="text-uppercase text-center fw-bold text-light pb-5">Tickets</h1>
+      <div class="container pt-5">
+          <h1 class="text-uppercase text-center fw-bold text-light pb-3">Tickets</h1>
           <div id="tickets" class="row d-flex justify-content-center gx-0">
               <div class="col ticket m-3">
                   <div class="headerTicket d-flex flex-column align-items-center">
@@ -95,10 +95,10 @@ export default {
 #jumbotron {
     background-image: url('../assets/img/ticket-bg.jpg');
     width: 100vw;
-    height: 650px;
+    height: 595px;
     background-size: contain;
     background-position: center;
-    .container-jumbo {
+    .container {
         .ticket{
             height: 400px;
             background-color: #F9F9F9;

@@ -57,7 +57,7 @@
                   
               </div>
           </div>
-          <div class="col-9 mb-4">
+          <div class="col-9">
               <div id="text_section_info">
                   <h1 class="text-uppercase mt-4"> Welcoming and introduction</h1>
                   <p class="py-4">Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nella non metus auctor fringilla. Aenean lacinia bibendu, nulla sed cosectetur...</p>
@@ -94,11 +94,6 @@ export default {
 }
 #section_days{
     background-color: #F3F3F3;
-    .user{
-        p{
-
-        }
-    }
     .info{
         height: 200px;
         #data_section_info{
