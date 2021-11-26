@@ -1,15 +1,10 @@
 <template>
-  <div class="container row">
-      <div class="col-6 video my-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-6 video my-4">
           <h1 class="text-uppercase">Presentation</h1>
-          <div class="video">
-            <img src="@/assets/img/461365506.webp" alt="">
-            <div class="control-bar">
-                <img src="@/assets/img/bar-control-video.svg" alt="">
-            </div>
+          <img src="@/assets/img/presentation-control-bar.svg" alt="pres-control">
           </div>
-         
-      </div>
       <div class="col-6 my-4">
           <h1 class="text-uppercase">twitter feed</h1>
           <ul class="list-unstyled">
@@ -49,6 +44,8 @@
 
           </ul>
       </div>
+      </div>
+      
   </div>
 </template>
 
@@ -62,21 +59,8 @@ export default {
 @import '@/assets/style/variables.scss';
 
 .col-6.video{
-    display: flex;
-    flex-direction: column;
-    .video{
-        position: relative;
-        img{
-            margin-left: 70px;
-        }
-    }
-    .control-bar{
-        position: absolute;
-        bottom: 0px;
-        right: 10px;
-        img{
-            width: 550px;
-        }
+    img{
+        transform: scale(1.3);
     }
 }
 .text_message{

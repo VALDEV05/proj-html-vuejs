@@ -29,23 +29,23 @@
     <div id="location">
         <location /> 
     </div>
-    <!-- /#location -->
+    <!-- /#component location -->
     <div id="recent_news">
         <recentNews/>
     </div>
-    <!-- /#recent_news -->
+    <!-- /#component recent_news -->
     <div id="ticketSection">
         <ticketSection/>
     </div>
-    <!-- /#ticketSection -->
+    <!-- /# component ticketSection -->
     <div id="presentationTwitter">
         <presentationTwitter/>
     </div>
-    <!-- /#presentationTwitter -->
+    <!-- /#component presentationTwitter -->
     <div id="sponsor">
-        sponsor
+        <sponsor />
     </div>
-    <!-- /#sponsor -->
+    <!-- /#component sponsor -->
   </div>
   <!-- /siteMain -->
 </template>
@@ -60,6 +60,7 @@ import location from '@/components/location.vue'
 import recentNews from '@/components/recentNews.vue'
 import ticketSection from '@/components/ticketSection.vue'
 import presentationTwitter from '@/components/presentationTwitter.vue'
+import sponsor from '@/components/sponsor.vue'
 
 
 export default {
@@ -73,7 +74,7 @@ export default {
         recentNews,
         ticketSection,
         presentationTwitter,
-
+        sponsor,
     },
     props:{
         title:String,
