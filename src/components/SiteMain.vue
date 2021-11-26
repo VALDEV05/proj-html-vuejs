@@ -30,6 +30,22 @@
         <location /> 
     </div>
     <!-- /#location -->
+    <div id="recent_news">
+        <recentNews/>
+    </div>
+    <!-- /#recent_news -->
+    <div id="tickets">
+        tickets
+    </div>
+    <!-- /#tickets -->
+    <div id="presentation">
+        presentation
+    </div>
+    <!-- /#presentation -->
+    <div id="sponsor">
+        sponsor
+    </div>
+    <!-- /#sponsor -->
   </div>
   <!-- /siteMain -->
 </template>
@@ -41,6 +57,7 @@ import cardInfo from '@/components/cardInfo.vue'
 import jumbotronSocialNetwork from '@/components/jumbotronSocialNetwork.vue'
 import JumbotronCountdown from '@/components/jumbotronCountdown.vue'
 import location from '@/components/location.vue'
+import recentNews from '@/components/recentNews.vue'
 
 
 export default {
@@ -50,7 +67,8 @@ export default {
         cardInfo,
         jumbotronSocialNetwork,
         JumbotronCountdown,
-        location
+        location,
+        recentNews
 
     },
     props:{
