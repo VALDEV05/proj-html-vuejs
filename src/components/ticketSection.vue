@@ -31,20 +31,20 @@
               <div class="col ticket m-3">
                   <div class="headerTicket d-flex flex-column align-items-center">
                       <div class="titleTicket text-center pt-4">
-                          <p class="m-0 fw-bold text-uppercase">One Day Pass</p>
+                          <p class="m-0 fw-bold text-uppercase">Four Day Pass</p>
                       </div>
                       <div class="priceTicket">
-                          <p class="m-0 fw-bold text-uppercase">free</p>
+                          <p class="m-0 fw-bold text-uppercase">750.00 usd</p>
                       </div>
                   </div>
                   <!-- /headerTicket -->
                   <div class="mainTicket d-flex align-items-center justify-content-center">
                       <ul class="list-unstyled text-center text-capitalized">
-                            <li class="py-2">One Day Access</li>
+                            <li class="py-2">Four Day Access</li>
                             <li class="py-2">Coffee Break</li>
                             <li class="py-2">Lunch (International Buffet)</li>
                             <li class="py-2">Document Sheets</li>
-                            <li class="py-2">50USD Voucher For Next Event</li>
+                            <li class="py-2">100USD Voucher For Next Event</li>
                       </ul>
                   </div>
                   <div class="footerTicket">
@@ -56,20 +56,20 @@
               <div class="col ticket m-3">
                   <div class="headerTicket d-flex flex-column align-items-center">
                       <div class="titleTicket text-center pt-4">
-                          <p class="m-0 fw-bold text-uppercase">One Day Pass</p>
+                          <p class="m-0 fw-bold text-uppercase">Two Day Passes</p>
                       </div>
                       <div class="priceTicket">
-                          <p class="m-0 fw-bold text-uppercase">free</p>
+                          <p class="m-0 fw-bold text-uppercase">580.00 usd</p>
                       </div>
                   </div>
                   <!-- /headerTicket -->
                   <div class="mainTicket d-flex align-items-center justify-content-center">
                       <ul class="list-unstyled text-center text-capitalized">
-                            <li class="py-2">One Day Access</li>
+                            <li class="py-2">Two Day Access</li>
                             <li class="py-2">Coffee Break</li>
                             <li class="py-2">Lunch (International Buffet)</li>
                             <li class="py-2">Document Sheets</li>
-                            <li class="py-2">50USD Voucher For Next Event</li>
+                            <li class="py-2">70USD Voucher For Next Event</li>
                       </ul>
                   </div>
                   <div class="footerTicket">
@@ -115,6 +115,9 @@ export default {
                 height: calc(400px - 160px);
                 font-family: 'Bitter', serif;
                 color: $icon-gray !important;
+                li{
+                    font-size: 15px;
+                }
             }
             .footerTicket{
                 height: 70px;
