@@ -22,6 +22,14 @@
         <programs />
     </div>
     <!-- /#component program -->
+    <div id="googlemap" class="container">
+        mappa
+    </div>
+    <!-- /#googlemap -->
+    <div id="location">
+        <location /> 
+    </div>
+    <!-- /#location -->
   </div>
   <!-- /siteMain -->
 </template>
@@ -31,7 +39,8 @@ import programs from '@/components/programs.vue'
 import speakers from '@/components/speakers.vue'
 import cardInfo from '@/components/cardInfo.vue'
 import jumbotronSocialNetwork from '@/components/jumbotronSocialNetwork.vue'
-import JumbotronCountdown from './jumbotronCountdown.vue'
+import JumbotronCountdown from '@/components/jumbotronCountdown.vue'
+import location from '@/components/location.vue'
 
 
 export default {
@@ -41,6 +50,7 @@ export default {
         cardInfo,
         jumbotronSocialNetwork,
         JumbotronCountdown,
+        location
 
     },
     props:{
