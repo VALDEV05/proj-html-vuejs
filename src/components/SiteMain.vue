@@ -169,12 +169,19 @@
         
     </div>
     <!-- /#speakers -->
+    <div id="program">
+        <programs />
+    </div>
   </div>
   <!-- /siteMain -->
 </template>
 
 <script>
+import programs from '@/components/programs.vue'
 export default {
+    components:{
+        programs
+    },
     props:{
         title:String,
     },
@@ -280,7 +287,7 @@ export default {
 }
 #speakers{
     background-color: #F3F3F3;
-    height: 600px;
+    height: 500px;
     .controls{
         padding-top: 50px;
         .btn_angle{
