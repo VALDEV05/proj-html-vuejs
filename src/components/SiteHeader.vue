@@ -7,7 +7,7 @@
             </div>
             <div id="menu_header">
                 <ul class="list-unstyled d-flex mt-3">
-                    <li class="px-3" v-for="item in items" :key="item">
+                    <li class="px-3" v-for="item in items" :key="item.element">
                         <a href="#" class="text-uppercase link_header text-decoration-none">{{item.element.toUpperCase()}}</a>
                     </li>
                     <!-- end cycle header -->

@@ -1,7 +1,7 @@
 <template>
   <div id="siteMain"> 
-      <div id="jumbotron_socialNetwork" class="d-flex align-items-center"> 
-          <div class="container-jumbo text-center text-uppercase">
+      <div id="jumbotron_socialNetwork" class="pt-5"> 
+          <div class="container-jumbo text-center text-uppercase pt-3">
               <div class="title text-light">
                   <p  class="m-0 title-sm">Conference on</p>
                   <p class="m-0 title-lg fw-bold">social networks</p>
@@ -20,14 +20,13 @@
                   <button type="button" class="btn btn_register text-uppercase">register online</button>
               </div>
           </div>
-    
-    
-   
+
     </div>
+    <!-- /jumbotron_socialNetwork -->
     <div class="section_card container">
         <div class="row mt-5">
             <div class="col card_main d-flex">
-                <img src="../assets/img/trophy-solid.svg" alt="trophy">
+                <img src="@/assets/img/trophy-solid.svg" alt="trophy">
                 <div id="text_card" class="mx-4">
                     <p class="title_card text-uppercase">Who we are</p>
                     <p class="text-muted">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectutyr estat lobo rtis. Cum sociis natoque.</p>
@@ -35,24 +34,26 @@
                 </div>
             </div>
             <div class="col card_main d-flex">
-                <img src="../assets/img/bolt-solid.svg" alt="bolt">
+                <img src="@/assets/img/bolt-solid.svg" alt="bolt">
                 <div id="text_card" class="mx-4">
-                    <p class="title_card text-uppercase">Who we are</p>
+                    <p class="title_card text-uppercase">What we do</p>
                     <p class="text-muted">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectutyr estat lobo rtis. Cum sociis natoque.</p>
                     <p><a href="#" class="learn_more_font">Learn More</a></p>
                 </div>
 
             </div>
             <div class="col card_main d-flex">
-                <img src="../assets/img/question-solid.svg" alt="question">
+                <img src="@/assets/img/question-solid.svg" alt="question">
                 <div id="text_card" class="mx-4">
-                    <p class="title_card text-uppercase">Who we are</p>
+                    <p class="title_card text-uppercase">why us?</p>
                     <p class="text-muted">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectutyr estat lobo rtis. Cum sociis natoque.</p>
                     <p><a href="#" class="text-decoration-none learn_more_font">Learn More</a></p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- /section_card -->
+
     <div id="jumbotron_countdown" class="jumbotronClass mt-5">
         <div class="container-jumbo">
             <div class="row pt-5">
@@ -91,15 +92,34 @@
 
             </div>
             <div id="text_jumbo_countdown" class="text-uppercase fw-bold" >
-                subscribe for updatae
-                <div id="input_countdown" class="mt-4 d-flex align-items-center justify-content-center   ">
-                    <input type="text" id="input_countdown">
-                <button class="btn_subscribe">subcribe</button>
+                subscribe for update
+                <div id="input_countdown" class="mt-4 d-flex align-items-center justify-content-center">
+                    <input type="text" id="input_countdown" class="py-1" >
+                <button class="btn_subscribe py-3 fw-bold">subcribe</button>
                 </div>
                 
             </div>
         </div>
     </div>
+    <!-- /jumbotron_countdown -->
+    <div id="speakers">
+        <div class="container">
+            <div class="controls d-flex justify-content-between">
+                <div class="title_control">
+                    <h1 class="text-uppercase fw-bold">Speakers</h1>
+                </div>
+                <div class="controls_button d-flex">
+                    <div class="btn_angle rounded-3 angle-left">&lt;</div>
+                    <div class="btn_angle rounded-3 angle-right">&gt;</div>
+                </div>
+            </div>
+            <div class="section_card_speakers">
+                
+            </div>
+        </div>
+        
+    </div>
+    <!-- /#speakers -->
   </div>
   <!-- /siteMain -->
 </template>
@@ -108,7 +128,7 @@
 export default {
     props:{
         title:String,
-    }
+    },
 }
 </script>
 
@@ -117,7 +137,7 @@ export default {
 #jumbotron_socialNetwork {
     background-image: url('../assets/img/slider-1-bg.jpg');
     width: 100vw;
-    height: 700px;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -159,7 +179,6 @@ export default {
         }
     }
 }
-
 #jumbotron_countdown {
     background-image: url('../assets/img/coutdown-bg1.jpg');
     width: 100vw;
@@ -186,7 +205,7 @@ export default {
                 }
                 &:hover{
                     background-color: rgba($black-color, $alpha: 0.8);
-                    box-shadow: 10px 10px 5px  black;
+                    box-shadow: 10px 10px 5px  $black-color;
                     height: 190px;
                     width: 250px;   
                     transition: height 4s, width 2s;
@@ -202,11 +221,35 @@ export default {
             font-size: 24px;
             margin-left: 15px;
             padding: 15px 20px;
-            background: red;
+            background: $scarlet-red-color;
             border: none;
-            color: white;
+            color: $white-color;
             text-transform: uppercase;
+            box-shadow:  2px  rgb(78, 18, 18);
         }
 
 }
+#speakers{
+    background-color: #F3F3F3;
+    height: 400px;
+    .controls{
+        padding-top: 50px;
+        .btn_angle{
+        background-color: $scarlet-red-color;   
+        height: 30px;
+        width: 30px;
+        padding: 20px;
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white-color;
+        font-weight: bold;
+    
+        }
+
+    }
+}
+
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <SiteHeader :items="linksArray"/>
+    <SiteHeader :items="elementsNavbar"/>
     <SiteMain />
     <SiteFooter title="Footer"/>
 
@@ -16,7 +16,7 @@ export default {
   name: 'App',
   data(){
     return{
-      linksArray:[
+      elementsNavbar:[
         {element : "home"},
         {element : "pages"},
         {element : "program"},
