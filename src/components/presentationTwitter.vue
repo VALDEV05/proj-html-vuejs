@@ -2,47 +2,24 @@
   <div class="container">
       <div class="row">
           <div class="col-6 video my-4">
-          <h1 class="text-uppercase">Presentation</h1>
-          <img src="@/assets/img/presentation-control-bar.svg" alt="pres-control">
+          <h1 class="text-uppercase">{{titlePresentation}}</h1>
+          <img :src="require('@/assets/img/' + video.videoUrl)" alt="pres-control" v-for="video in videos" :key="video.videoUrl">
           </div>
       <div class="col-6 my-4">
-          <h1 class="text-uppercase">twitter feed</h1>
+          <h1 class="text-uppercase">{{titleTwitter}}</h1>
           <ul class="list-unstyled">
-              <li class="tweet mb-4 d-flex">
-                  <img src="@/assets/img/twitter-brands-celest.svg" style="height:50px; width:50px;" alt="">
+              <li class="tweet mb-4 d-flex" v-for="tweet in tweets" :key="tweet.logo">
+                  <img :src="require('@/assets/img/' + tweet.logoUrl)"  style="height:50px; width:50px;" alt="">
                   <div id="text_message" class="ms-4">
                       <div class="text_message">
-                        Stand out and be vibrant with some of the best bright and bold templates on <span>@Envato</span> Elements. And add a splash of c... <span>https://t.co/jFrsnzEJK7</span>
+                        {{tweet.text}}
                       </div>
                       <div class="date mt-4">
-                          3 days ago
+                         {{tweet.date}}
                       </div>
                   </div>
               </li>
-              <li class="tweet mb-4 d-flex">
-                  <img src="@/assets/img/twitter-brands-celest.svg" style="height:50px; width:50px;" alt="">
-                  <div id="text_message" class="ms-4">
-                      <div class="text_message">
-                        Stand out and be vibrant with some of the best bright and bold templates on <span>@Envato</span> Elements. And add a splash of c... <span>https://t.co/jFrsnzEJK7</span>
-                      </div>
-                      <div class="date mt-4">
-                          9 days ago
-                      </div>
-                  </div>
-              </li>
-              <li class="tweet mb-4 d-flex">
-                  <img src="@/assets/img/twitter-brands-celest.svg" style="height:50px; width:50px;" alt="">
-                  <div id="text_message" class="ms-4">
-                      <div class="text_message">
-                        Stand out and be vibrant with some of the best bright and bold templates on <span>@Envato</span> Elements. And add a splash of c... <span>https://t.co/jFrsnzEJK7</span>
-                      </div>
-                      <div class="date mt-4">
-                          11 days ago
-                      </div>
-                  </div>
-              </li>
-
-          </ul>
+            </ul>
       </div>
       </div>
       
@@ -51,7 +28,34 @@
 
 <script>
 export default {
-
+    props:{
+        titlePresentation:String,
+        titleTwitter:String,
+    },
+    data(){
+        return{
+            videos:[
+                {videoUrl:'presentation-control-bar.svg'}
+            ],
+            tweets:[
+                {
+                    logoUrl:'twitter-brands-celest.svg',
+                    text: 'Stand out and be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... https://t.co/jFrsnzEJK7',
+                    date:'3 days ago'
+                },
+                {
+                    logoUrl:'twitter-brands-celest.svg',
+                    text: 'Stand out and be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... https://t.co/jFrsnzEJK7',
+                    date:'3 days ago'
+                },
+                {
+                    logoUrl:'twitter-brands-celest.svg',
+                    text: 'Stand out and be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... https://t.co/jFrsnzEJK7',
+                    date:'3 days ago'
+                },
+            ]
+        }
+    }
 }
 </script>
 

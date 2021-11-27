@@ -39,7 +39,7 @@
     </div>
     <!-- /# component ticketSection -->
     <div id="presentationTwitter">
-        <presentationTwitter/>
+        <presentationTwitter titlePresentation="presentation" titleTwitter="twitter feed"/>
     </div>
     <!-- /#component presentationTwitter -->
     <div id="sponsor">

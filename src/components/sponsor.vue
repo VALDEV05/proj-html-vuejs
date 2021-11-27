@@ -1,12 +1,12 @@
 <template>
   <div id="background-sponsor"> 
       <div class="container">
-            <div id="text-sponsor" class="text-center">
+            <div id="text-sponsor" class="text-center" v-for="(title, index) in titles" :key="index">
                 <div class="title-sponsor text-uppercase fw-bold">
-                    sponsor
+                    {{title.titleBg}}
                 </div>
                 <div class="subtitle-sponsor pt-3">
-                    Maecenas faucibus mollis interdum. Nullam id dolor <br>id nibh ultricies vehicula ut id elit.
+                    {{title.subTitle}}
                 </div>
             </div>
             <div class="row mt-4 py-3">
@@ -25,6 +25,10 @@
 export default {
     data(){
         return{
+            titles:[
+                {titleBg: 'sponsor'},
+                {subTitle: `Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit`}
+            ],
             banners:[
                 {url: 'banner-1.jpg', alt: 'banner-1'},
                 {url: 'banner-2.jpg', alt: 'banner-2'},
@@ -52,6 +56,8 @@ export default {
         }
         .subtitle-sponsor{
             color: $icon-gray;
+            width: 400px;
+            margin: auto;
             
         }
     }
