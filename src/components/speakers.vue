@@ -2,7 +2,7 @@
   <div class="container">
             <div class="controls d-flex justify-content-between">
                 <div class="title_control">
-                    <h1 class="text-uppercase fw-bold">Speakers</h1>
+                    <h1 class="text-uppercase fw-bold">{{title}}</h1>
                 </div>
                 <div class="controls_button d-flex">
                     <div class="btn_angle rounded-3 angle-left">&lt;</div>
@@ -13,60 +13,58 @@
             <!-- /controls -->
             <div class="section_card_speakers">
                 <div class="row mt-5">
-                    <div class="col-3">
+                    <div class="col-3" v-for="card in cards" :key="card.name">
                         <div class="card border-0" style="width: 18rem;">
-                            <img src="@/assets/img/speaker-6.jpg" class="card-img-top" alt="speaker-6">
+                            <img :src="require('@/assets/img/' + card.image)" class="card-img-top" alt="speaker-6">
                             <div class="text_card text-center pt-3">
-                                <p class="m-0 title-card text-uppercase">Patrick spencer</p>
-                                <p class="m-0 subtitle-card">S&amp;P Analyzer</p>
+                                <p class="m-0 title-card text-uppercase">{{card.name}}</p>
+                                <p class="m-0 subtitle-card">{{card.role}}</p>
                             </div>
                         </div>
                         <!-- /card -->
                     </div>
                     <!-- /col-card -->
-                    <div class="col-3">
-                        <div class="card border-0" style="width: 18rem;">
-                            <img src="@/assets/img/speaker-5.jpg" class="card-img-top" alt="speaker-6">
-                            <div class="text_card text-center pt-3">
-                                <p class="m-0 title-card text-uppercase">Janet jones</p>
-                                <p class="m-0 subtitle-card">Maxii's Managar</p>
-                            </div>
-                        </div>
-                        <!-- /card -->
-                    </div>
-                    <!-- /col-card -->
-                    <div class="col-3">
-                        <div class="card border-0" style="width: 18rem;">
-                            <img src="@/assets/img/speaker-4.jpg" class="card-img-top" alt="speaker-6">
-                            <div class="text_card text-center pt-3">
-                                <p class="m-0 title-card text-uppercase">Michael dover</p>
-                                <p class="m-0 subtitle-card">Starbuck's CEO</p>
-                            </div>
-                        </div>
-                        <!-- /card -->
-                    </div>
-                    <!-- /col-card -->
-                    <div class="col-3">
-                        <div class="card border-0" style="width: 18rem;">
-                            <img src="@/assets/img/speaker-3.jpg" class="card-img-top" alt="speaker-6">
-                            <div class="text_card text-center pt-3">
-                                <p class="m-0 title-card text-uppercase">Angelina holy</p>
-                                <p class="m-0 subtitle-card">Maxii's Managar</p>
-                            </div>
-                        </div>
-                        <!-- /card -->
-                    </div>
-                    <!-- /col-card -->
-
                 </div>
-                
             </div>
         </div>
 </template>
 
 <script>
 export default {
-
+    props:{
+        title:String,
+    },
+    data(){
+        return{
+            cards:[
+                {   
+                    image:'speaker-6.jpg',
+                    alt:'speaker-6',
+                    name:'patrick spencer',
+                    role:'S&P Analyzer'
+                },
+                {   
+                    image:'speaker-5.jpg',
+                    alt:'speaker-5',
+                    name:'janet jones',
+                    role:" Newyork Post's GM"
+                },
+                {   
+                    image:'speaker-4.jpg',
+                    alt:'speaker-4',
+                    name:'Michael dover',
+                    role: "Starbuck's CEO"
+                },
+                {   
+                    image:'speaker-3.jpg',
+                    alt:'speaker-3',
+                    name:'Angelina holy',
+                    role:"Maxii's Managar"
+                }
+                
+            ]
+        }
+    }
 }
 </script>
 

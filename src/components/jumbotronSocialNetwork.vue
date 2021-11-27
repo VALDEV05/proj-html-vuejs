@@ -1,17 +1,13 @@
 <template>
     <div class="container-jumbo text-center text-uppercase pt-3">
         <div class="title text-light">
-            <p  class="m-0 title-sm">Conference on</p>
-            <p class="m-0 title-lg fw-bold">social networks</p>
+            <p  class="m-0 title-sm">{{title}}</p>
+            <p class="m-0 title-lg fw-bold">{{titleLG}}</p>
         </div> 
         <img src="@/assets/img/1-item-2.jpg" alt="">
         <div id="info" class="d-flex flex-row justify-content-center">
             <ul class="list-unstyled list-inline">
-                <li class=" list-inline-item"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#">23 - 26 MAY 2019 </a></li>
-                <li class="px-4 list-inline-item"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#"> / </a></li>
-                <li class=" list-inline-item"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#"> SANS FRANCISCO </a></li>
-                <li class="px-4 list-inline-item"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#"> / </a></li>
-                <li class="list-inline-item"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#"> 8 SPEAKERS </a></li>
+                <li class="px-3 list-inline-item" v-for="info in informations" :key="info.data"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#">{{info.info}}</a></li>
             </ul>
         </div>
         <div class="register">
@@ -22,7 +18,21 @@
 
 <script>
 export default {
-
+props:{
+    title:String,
+    titleLG:String,
+},
+data(){
+    return{
+        informations:[
+            {info: '23 - 26 may 2019'},
+            {info: '/'},
+            {info: 'sans francisco'},
+            {info: '/'},
+            {info: '8 speaker'},
+        ]
+    }
+}
 }
 </script>
 

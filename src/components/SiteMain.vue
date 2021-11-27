@@ -1,7 +1,7 @@
 <template>
   <div id="siteMain"> 
     <div id="jumbotron_socialNetwork" class="pt-5">
-        <jumbotronSocialNetwork/>
+        <jumbotronSocialNetwork title="conference on" titleLG="Social networks"/>
     </div>
     <!-- /component jumbotron_socialNetwork -->
     <div id="section_card">
@@ -14,7 +14,7 @@
     </div>
     <!-- /component jumbotron_countdown -->
     <div id="speakers">
-        <speakers/>
+        <speakers title="Speakers"/>
         
     </div>
     <!-- /# component speakers -->
