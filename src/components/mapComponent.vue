@@ -1,10 +1,10 @@
 <template>
 <div class="d-flex justify-content-center" style="width:100vw; height:300px;">
     <GmapMap
-  :center="{lat:51.507437, lng:-0.127265}"
-  :zoom="14"
-  map-type-id="terrain"
-  style="width: 100vw; height: 300px"
+            :center="{lat:51.507437, lng:-0.127265}"
+            :zoom="14"
+            map-type-id="terrain"
+            style="width: 100vw; height: 300px"
 >
   <GmapMarker
     :key="index"
@@ -14,7 +14,8 @@
     :draggable="true"
     @click="center=m.position"
   />
-</GmapMap></div>
+</GmapMap>
+</div>
 
 </template>
 

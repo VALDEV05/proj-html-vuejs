@@ -22,9 +22,9 @@
         <programs />
     </div>
     <!-- /#component program -->
-    <div id="googlemap">
+    <!-- <div id="googlemap">
         <mapComponent/>
-    </div>
+    </div> -->
     <!-- /#container mapComponent -->
     <div id="location" class="mt-2">
         <location /> 
@@ -61,7 +61,7 @@ import recentNews from '@/components/recentNews.vue'
 import ticketSection from '@/components/ticketSection.vue'
 import presentationTwitter from '@/components/presentationTwitter.vue'
 import sponsor from '@/components/sponsor.vue'
-import mapComponent from '@/components/mapComponent.vue'
+//import mapComponent from '@/components/mapComponent.vue'
 
 
 export default {
@@ -76,10 +76,7 @@ export default {
         ticketSection,
         presentationTwitter,
         sponsor,
-        mapComponent,
-    },
-    props:{
-        title:String,
+        //mapComponent,
     },
 }
 </script>

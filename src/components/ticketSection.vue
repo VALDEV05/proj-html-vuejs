@@ -29,7 +29,7 @@
               </div>
               <!-- /ticket -->
               <div class="col ticket m-3">
-                  <div class="headerTicket d-flex flex-column align-items-center">
+                  <div class="headerTicket d-flex flex-column align-items-center discount">
                       <div class="titleTicket text-center pt-4">
                           <p class="m-0 fw-bold text-uppercase">Four Day Pass</p>
                       </div>
@@ -104,7 +104,7 @@ export default {
             background-color: #F9F9F9;
             .headerTicket{
                 height: 90px;
-                background-color: #E9E9E9;
+                background-color: #E9E9E9; 
                 .priceTicket{
                     p{
                         color: $scarlet-red-color;
