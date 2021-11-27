@@ -10,9 +10,8 @@
                 </div>
             </div>
             <div class="row mt-4 py-3">
-                <div class="col-2 logo-sponsor" v-for="banner in banners" :key="banner">
-                    <img :src="banner.url" alt="">
-                    <p>{{banner.url}}</p>
+                <div class="col-2 logo-sponsor" v-for="banner in banners" :key="banner.url">
+                    <img :src="require('@/assets/img/' + banner.url)" :alt="banner.alt">
 
                 </div>
             </div>
@@ -27,12 +26,12 @@ export default {
     data(){
         return{
             banners:[
-                {url: '@/assets/img/banner-1.jpg', alt: 'banner-1'},
-                {url: '@/assets/img/banner-2.jpg', alt: 'banner-2'},
-                {url: '@/assets/img/banner-3.jpg', alt: 'banner-3'},
-                {url: '@/assets/img/banner-4.jpg', alt: 'banner-4'},
-                {url: '@/assets/img/banner-5.jpg', alt: 'banner-5'},
-                {url: '@/assets/img/banner-6.jpg', alt: 'banner-6'},
+                {url: 'banner-1.jpg', alt: 'banner-1'},
+                {url: 'banner-2.jpg', alt: 'banner-2'},
+                {url: 'banner-3.jpg', alt: 'banner-3'},
+                {url: 'banner-4.jpg', alt: 'banner-4'},
+                {url: 'banner-5.jpg', alt: 'banner-5'},
+                {url: 'banner-6.jpg', alt: 'banner-6'},
             ]
         }
     }
@@ -58,29 +57,3 @@ export default {
     }
 }
 </style>
-
-
-
-
-
-
-
-
-<!-- <div class="col-2 logo-sposnor">
-                    <img src="@/assets/img/banner-1.jpg" alt="">
-                </div>
-                <div class="col-2 logo-sposnor">
-                    <img src="@/assets/img/banner-2.jpg" alt="">
-                </div>
-                <div class="col-2 logo-sposnor">
-                    <img src="@/assets/img/banner-3.jpg" alt="">
-                </div>
-                <div class="col-2 logo-sposnor">
-                    <img src="@/assets/img/banner-4.jpg" alt="">
-                </div>
-                <div class="col-2 logo-sposnor">
-                    <img src="@/assets/img/banner-5.jpg" alt="">
-                </div>
-                <div class="col-2 logo-sposnor">
-                    <img src="@/assets/img/banner-6.jpg" alt="">
-                </div> -->
