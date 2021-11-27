@@ -18,15 +18,15 @@
         
     </div>
     <!-- /# component speakers -->
-    <div id="program">
+    <div id="program" class="mb-2">
         <programs />
     </div>
     <!-- /#component program -->
-    <div id="googlemap" class="container">
-        mappa
+    <div id="googlemap">
+        <mapComponent/>
     </div>
-    <!-- /#googlemap -->
-    <div id="location">
+    <!-- /#container mapComponent -->
+    <div id="location" class="mt-2">
         <location /> 
     </div>
     <!-- /#component location -->
@@ -61,6 +61,7 @@ import recentNews from '@/components/recentNews.vue'
 import ticketSection from '@/components/ticketSection.vue'
 import presentationTwitter from '@/components/presentationTwitter.vue'
 import sponsor from '@/components/sponsor.vue'
+import mapComponent from '@/components/mapComponent.vue'
 
 
 export default {
@@ -75,6 +76,7 @@ export default {
         ticketSection,
         presentationTwitter,
         sponsor,
+        mapComponent,
     },
     props:{
         title:String,
