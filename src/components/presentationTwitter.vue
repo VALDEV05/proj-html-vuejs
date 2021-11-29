@@ -45,7 +45,9 @@ export default {
 
 <style lang="scss">
 @import '@/assets/style/variables.scss';
-
+#presentationTwitter {
+    height: 600px;
+}
 .col-6.video{
     img{
         transform: scale(1.3);

@@ -12,7 +12,7 @@
             </div>
             <!-- /controls -->
             <div class="section_card_speakers">
-                <div class="row mt-5">
+                <div class="row speaker">
                     <div class="col-3 container_card" v-for="card in items" :key="card.name">
                         <div class="card border-0" style="width: 18rem;">
                             <img :src="require('@/assets/img/' + card.image)" class="card-img-top image" alt="speaker-6">
@@ -64,9 +64,9 @@ export default {
 
 #speakers{
     background-color: #f6f6f6;
-    height: 500px;
+    height: 700px;
     .controls{
-        padding-top: 50px;
+        padding-top: 75px;
         .btn_angle{
         background-color: $primary-color;   
         height: 30px;
@@ -95,6 +95,9 @@ export default {
                 color: gray;
             }
         }
+}
+.row.speaker {
+    margin-top: 100px;
 }
 .container_card {
   position: relative;

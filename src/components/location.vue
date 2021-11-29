@@ -41,6 +41,9 @@ export default {
     background-position-y: center;
     .container-jumbo {
         height: 50%;
+        .title{
+            margin-top: 10px;
+        }
         .title-sm {
             font-size: 35px;
         }

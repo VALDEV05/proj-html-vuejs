@@ -58,12 +58,13 @@ export default {
 #jumbotron_countdown {
     background-image: url('../assets/img/coutdown-bg1.jpg');
     width: 100vw;
-    height: 500px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
     .container-jumbo{
-        height: 100%;
+        height: 50%;
+        padding-top: 80px;
         .countdown{
             height: 200px;
             color: $white-color;
@@ -91,7 +92,7 @@ export default {
         #text_jumbo_countdown{
             font-size: 40px;
             text-align: center;
-            margin-top: 20px;}
+            margin-top: 60px;}
         }
         .btn_subscribe {
             font-size: 24px;

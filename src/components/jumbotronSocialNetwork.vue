@@ -33,12 +33,15 @@ props:{
 #jumbotron_socialNetwork {
     background-image: url('../assets/img/slider-1-bg.jpg');
     width: 100vw;
-    height: 500px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
     .container-jumbo {
         height: 50%;
+        .title.text-light {
+            margin-top: 90px;
+        }
         .title-sm {
             font-size: 50px;
             &.animated{

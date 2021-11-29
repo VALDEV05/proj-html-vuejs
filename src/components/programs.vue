@@ -41,7 +41,7 @@
               <div id="text_section_info">
                   <h1 class="text-uppercase mt-4"> {{item.firstDay.program.title}}</h1>
                   <p class="py-4">{{item.firstDay.program.subtitle}}</p>
-                  <img :src="require('@/assets/img/' + item.firstDay.speaker.image)" style="height: 80px; width: 100px;" class="rounded-3" alt="speaker-8">
+                  <img class="speaker" :src="require('@/assets/img/' + item.firstDay.speaker.image)" style="height: 80px; width: 100px;" alt="speaker-8">
               </div>
           </div>
 
@@ -88,5 +88,9 @@ export default {
 
         }
     }
+}
+.speaker{
+    margin-bottom: 150px;
+    border-radius: 10px;
 }
 </style>
