@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-4 d-flex justify-content-center" v-for="card in items" :key="card.index">
                     <div class="card border-0" style="width: 26rem;">
-                        <img :src="require('@/assets/img/' + card.imageUrl)" alt="">
+                        <img :src="require('@/assets/img/' + card.imageUrl)" class="imgNews" alt="">
                         <div class="card-body">
                             <p class="sub-title m-0 pt-3 pb-2">{{card.subtitle}}</p>
                             <h5 class="card-title text-uppercase fw-bold pb-3">{{card.title}}</h5>
@@ -53,6 +53,12 @@ export default {
         &:hover{
             cursor: pointer;
             border-bottom: 1px solid $scarlet-red-color;
+        }
+    }
+    .imgNews{
+        &:hover{
+            filter: brightness(80%);
+            transition: filter .5s;
         }
     }
 }
