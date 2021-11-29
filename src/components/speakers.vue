@@ -13,7 +13,7 @@
             <!-- /controls -->
             <div class="section_card_speakers">
                 <div class="row mt-5">
-                    <div class="col-3 container_card" v-for="card in cards" :key="card.name">
+                    <div class="col-3 container_card" v-for="card in items" :key="card.name">
                         <div class="card border-0" style="width: 18rem;">
                             <img :src="require('@/assets/img/' + card.image)" class="card-img-top image" alt="speaker-6">
                             <div class="text_card text-center pt-3">
@@ -23,7 +23,7 @@
                             <div class="middle">
                                 <div class="text text-light d-flex">
                                     <div class="square mx-1">
-                                        <img src="@/assets/img/twitter-brands-white.svg"  alt="">
+                                        <img src="https://img.icons8.com/carbon-copy/100/000000/twitter--v2.png" style="color:white;"/>
                                     </div>
                                     <div class="square mx-1">
                                          <img src="@/assets/img/facebook-f-brands-white-h70.svg" alt="">
@@ -47,36 +47,11 @@
 export default {
     props:{
         title:String,
+        items:Array
     },
     data(){
         return{
-            cards:[
-                {   
-                    image:'speaker-6.jpg',
-                    alt:'speaker-6',
-                    name:'patrick spencer',
-                    role:'S&P Analyzer'
-                },
-                {   
-                    image:'speaker-5.jpg',
-                    alt:'speaker-5',
-                    name:'janet jones',
-                    role:" Newyork Post's GM"
-                },
-                {   
-                    image:'speaker-4.jpg',
-                    alt:'speaker-4',
-                    name:'Michael dover',
-                    role: "Starbuck's CEO"
-                },
-                {   
-                    image:'speaker-3.jpg',
-                    alt:'speaker-3',
-                    name:'Angelina holy',
-                    role:"Maxii's Managar"
-                }
-                
-            ]
+            
         }
     }
 }

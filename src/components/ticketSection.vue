@@ -1,34 +1,35 @@
 <template>
   <div id="jumbotron">
       <div class="container pt-5">
-          <h1 class="text-uppercase text-center fw-bold text-light pb-3">Tickets</h1>
+          <h1 class="text-uppercase text-center fw-bold text-light pb-3">{{title}}</h1>
           <div id="tickets" class="row d-flex justify-content-center gx-0">
-              <div class="col ticket m-3">
+              <div class="col ticket m-3" v-for="ticket in items" :key="ticket.ticket">
                   <div class="headerTicket d-flex flex-column align-items-center">
                       <div class="titleTicket text-center pt-4">
-                          <p class="m-0 fw-bold text-uppercase">One Day Pass</p>
+                          <p class="m-0 fw-bold text-uppercase">{{ticket.durationTicket}}</p>
                       </div>
                       <div class="priceTicket">
-                          <p class="m-0 fw-bold text-uppercase">free</p>
+                          <p class="m-0 fw-bold text-uppercase">{{ticket.priceTicket}}</p>
                       </div>
                   </div>
                   <!-- /headerTicket -->
-                  <div class="mainTicket d-flex align-items-center justify-content-center">
+                    <div class="mainTicket d-flex align-items-center justify-content-center">
                       <ul class="list-unstyled text-center text-capitalized">
-                            <li class="py-2">One Day Access</li>
-                            <li class="py-2">Coffee Break</li>
-                            <li class="py-2">Lunch (International Buffet)</li>
-                            <li class="py-2">Document Sheets</li>
-                            <li class="py-2">50USD Voucher For Next Event</li>
+                            <li class="py-2">{{ticket.included.duration}}</li>
+                            <li class="py-2">{{ticket.included.beverage}}</li>
+                            <li class="py-2">{{ticket.included.food}}</li>
+                            <li class="py-2">{{ticket.included.documentation}}</li>
+                            <li class="py-2">{{ticket.included.bonus}}</li>
                       </ul>
-                  </div>
+                    </div>
+                
                   <div class="footerTicket">
-                      <p class="text-center text-uppercase text-light fw-bold"><a class="text-light text-decoration-none" href="#">Book now</a></p>
+                      <p class="text-center text-uppercase text-light fw-bold"><a class="text-light text-decoration-none" href="#">{{button}}</a></p>
                   </div>
                   <!-- /footerTicket -->
               </div>
               <!-- /ticket -->
-              <div class="col ticket m-3">
+              <!-- <div class="col ticket m-3">
                   <div class="headerTicket d-flex flex-column align-items-center discount">
                       <div class="titleTicket text-center pt-4">
                           <p class="m-0 fw-bold text-uppercase">Four Day Pass</p>
@@ -37,7 +38,6 @@
                           <p class="m-0 fw-bold text-uppercase">750.00 usd</p>
                       </div>
                   </div>
-                  <!-- /headerTicket -->
                   <div class="mainTicket d-flex align-items-center justify-content-center">
                       <ul class="list-unstyled text-center text-capitalized">
                             <li class="py-2">Four Day Access</li>
@@ -50,9 +50,8 @@
                   <div class="footerTicket">
                       <p class="text-center text-uppercase text-light fw-bold"><a class="text-light text-decoration-none" href="#">Book now</a></p>
                   </div>
-                  <!-- /footerTicket -->
               </div>
-              <!-- /ticket -->
+
               <div class="col ticket m-3">
                   <div class="headerTicket d-flex flex-column align-items-center">
                       <div class="titleTicket text-center pt-4">
@@ -62,7 +61,6 @@
                           <p class="m-0 fw-bold text-uppercase">580.00 usd</p>
                       </div>
                   </div>
-                  <!-- /headerTicket -->
                   <div class="mainTicket d-flex align-items-center justify-content-center">
                       <ul class="list-unstyled text-center text-capitalized">
                             <li class="py-2">Two Day Access</li>
@@ -74,10 +72,9 @@
                   </div>
                   <div class="footerTicket">
                       <p class="text-center text-uppercase text-light fw-bold"><a class="text-light text-decoration-none" href="#">Book now</a></p>
-                  </div>
-                  <!-- /footerTicket -->
-              </div>
-              <!-- /ticket -->
+                  </div> 
+              </div>-->
+
 
           </div>
       </div>
@@ -86,7 +83,11 @@
 
 <script>
 export default {
-
+props:{
+    title:String,
+    items:Array,
+    button:String
+},
 }
 </script>
 

@@ -8,7 +8,7 @@
       <div class="col-6 my-4">
           <h1 class="text-uppercase">{{titleTwitter}}</h1>
           <ul class="list-unstyled">
-              <li class="tweet mb-4 d-flex" v-for="tweet in tweets" :key="tweet.logo">
+              <li class="tweet mb-4 d-flex" v-for="tweet in items" :key="tweet.logo">
                   <img :src="require('@/assets/img/' + tweet.logoUrl)"  style="height:50px; width:50px;" alt="">
                   <div id="text_message" class="ms-4">
                       <div class="text_message">
@@ -31,29 +31,13 @@ export default {
     props:{
         titlePresentation:String,
         titleTwitter:String,
+        items:Array,
     },
     data(){
         return{
             videos:[
                 {videoUrl:'presentation-control-bar.svg'}
             ],
-            tweets:[
-                {
-                    logoUrl:'twitter-brands-celest.svg',
-                    text: 'Stand out and be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... https://t.co/jFrsnzEJK7',
-                    date:'3 days ago'
-                },
-                {
-                    logoUrl:'twitter-brands-celest.svg',
-                    text: 'Stand out and be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... https://t.co/jFrsnzEJK7',
-                    date:'3 days ago'
-                },
-                {
-                    logoUrl:'twitter-brands-celest.svg',
-                    text: 'Stand out and be vibrant with some of the best bright and bold templates on @Envato Elements. And add a splash of c... https://t.co/jFrsnzEJK7',
-                    date:'3 days ago'
-                },
-            ]
         }
     }
 }

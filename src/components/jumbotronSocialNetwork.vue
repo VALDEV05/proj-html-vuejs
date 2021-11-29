@@ -7,11 +7,11 @@
         <img src="@/assets/img/1-item-2.jpg" alt="">
         <div id="info" class="d-flex flex-row justify-content-center">
             <ul class="list-unstyled list-inline">
-                <li class="px-3 list-inline-item" v-for="info in informations" :key="info.data"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#">{{info.info}}</a></li>
+                <li class="px-3 list-inline-item" v-for="item in items" :key="item.data"><a class="text-light fw-bold text-uppercase text-decoration-none" href="#">{{item.info}}</a></li>
             </ul>
         </div>
         <div class="register">
-            <button type="button" class="btn btn_register text-uppercase">register online</button>
+            <button type="button" class="btn btn_register text-uppercase">{{buttonText}}</button>
         </div>
     </div>
 </template>
@@ -21,18 +21,9 @@ export default {
 props:{
     title:String,
     titleLG:String,
+    buttonText:String,
+    items:Array
 },
-data(){
-    return{
-        informations:[
-            {info: '23 - 26 may 2019'},
-            {info: '/'},
-            {info: 'sans francisco'},
-            {info: '/'},
-            {info: '8 speaker'},
-        ]
-    }
-}
 }
 </script>
 

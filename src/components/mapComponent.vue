@@ -1,10 +1,10 @@
 <template>
-<div class="d-flex justify-content-center" style="width:100vw; height:300px;">
+<div class="d-flex justify-content-center" style="width:100vw; height:500px;">
     <GmapMap
             :center="{lat:51.507437, lng:-0.127265}"
             :zoom="14"
             map-type-id="terrain"
-            style="width: 100vw; height: 300px"
+            style="width: 100vw; height: 500px"
 >
   <GmapMarker
     :key="index"

@@ -2,66 +2,46 @@
   <div class="container">
       <div class="header row mt-5">
             <div class="col-3">
-                <h1 class="text-uppercase fw-bold">Program</h1>
+                <h1 class="text-uppercase fw-bold">{{title}}</h1>
             </div>
             <div class="col text-start">
-                <p class="text-muted">This conference run through all 4 days from 23-26 May 2016,<br>
-                            We also provide free lunch and coffee break in each day
-                </p>
+                <p class="text-muted">{{subtitle}}</p>
             </div>
             <div class="col-2 text-end viewFull"><a href="#" class="text-decoration-none"> View Full Program</a></div>
       </div>
       <!-- /header -->
       <div id="timeline" class="mt-5">
           <div class="row">
-              <div class="col-2 day ps-4 py-3">
-                  <h1 class="m-0 py-2">Day 1</h1>
-                  <p class="m-0">23 May 2016</p>
-              </div>
-              <div class="col-2 day ps-4 py-3">
-                  <h1 class="m-0 py-2">Day 2</h1>
-                  <p class="m-0">24 May 2016</p>
-              </div>
-              <div class="col-2 day ps-4 py-3">
-                  <h1 class="m-0 py-2">Day 3</h1>
-                  <p class="m-0">25 May 2016</p>
-              </div>
-              <div class="col-2 day ps-4 py-3">
-                  <h1 class="m-0 py-2">Day 4</h1>
-                  <p class="m-0">26 May 2016</p>
-              </div>
-              <div class="col-2 day ps-4 py-3">
-                  <h1 class="m-0 py-2">Day 5</h1>
-                  <p class="m-0">27 May 2016</p>
-              </div>
-              <div class="col-2 day ps-4 py-4">
+              <div class="col-2 day ps-4 py-3" v-for="day in days" :key="day.day">
+                  <h1 class="m-0 py-2">{{day.day}}</h1>
+                  <p class="m-0">{{day.date}}</p>
               </div>
           </div>
       </div>
       <!-- /timeline -->
-      <div id="section_days" class="row pt-5">
+      <div id="section_days" class="row pt-5" v-for="item in items" :key="item.item">
           <div class="col-3 info d-flex align-items-center">
               <div id="data_section_info" >
                   <div id="clock" class="d-flex py-2">
-                    <img src="@/assets/img/clock-regular.svg" style="height: 25px; width: 25px;" alt="clock">
-                    <p class="ms-4 m-0 text-muted text-uppercase">09:00-10:30</p>  
+                    <img :src="require('@/assets/img/' + item.firstDay.hour.icon)" style="height: 25px; width: 25px;" alt="clock">
+                    <p class="ms-4 m-0 text-muted text-uppercase">{{item.firstDay.hour.hourly}}</p>  
                   </div>
                   <div id="location" class="d-flex py-2">
-                    <img src="@/assets/img/location-arrow-solid.svg" style="height: 25px; width: 25px;" alt="clock">
-                    <p class="ms-4 m-0 text-muted text-uppercase">room A</p>  
+                    <img :src="require('@/assets/img/' + item.firstDay.location.icon)" style="height: 25px; width: 25px;" alt="clock">
+                    <p class="ms-4 m-0 text-muted text-uppercase">{{item.firstDay.location.room}}</p>  
                   </div>
                   <div id="user" class="d-flex py-2">
-                    <img src="@/assets/img/user-solid.svg" style="height: 25px; width: 25px;" alt="clock">
-                    <p class="ms-4 m-0 text-muted text-uppercase">Laurence francis</p>  
+                    <img :src="require('@/assets/img/' + item.firstDay.speaker.icon)" style="height: 25px; width: 25px;" alt="clock">
+                    <p class="ms-4 m-0 text-muted text-uppercase">{{item.firstDay.speaker.name}}</p>  
                   </div>
                   
               </div>
           </div>
           <div class="col-9">
               <div id="text_section_info">
-                  <h1 class="text-uppercase mt-4"> Welcoming and introduction</h1>
-                  <p class="py-4">Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nella non metus auctor fringilla. Aenean lacinia bibendu, nulla sed cosectetur...</p>
-                  <img src="@/assets/img/speaker-8.jpg" style="height: 80px; width: 100px;" class="rounded-3" alt="speaker-8">
+                  <h1 class="text-uppercase mt-4"> {{item.firstDay.program.title}}</h1>
+                  <p class="py-4">{{item.firstDay.program.subtitle}}</p>
+                  <img :src="require('@/assets/img/' + item.firstDay.speaker.image)" style="height: 80px; width: 100px;" class="rounded-3" alt="speaker-8">
               </div>
           </div>
 
@@ -71,7 +51,13 @@
 
 <script>
 export default {
+    props:{
+        title:String,
+        subtitle:String,
+        days:Array,
+        items:Array
 
+    },
 }
 </script>
 
