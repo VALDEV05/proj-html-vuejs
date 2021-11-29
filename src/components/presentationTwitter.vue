@@ -55,7 +55,7 @@ export default {
     font-size: 15px;
     color: $icon-gray;
     span{
-        color: $scarlet-red-color;
+        color: $primary-color;
     }
 }
 .date{

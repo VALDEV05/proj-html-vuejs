@@ -24,7 +24,7 @@
                     </div>
                 
                   <div class="footerTicket">
-                      <p class="text-center text-uppercase text-light fw-bold"><a class="text-light text-decoration-none" href="#">{{button}}</a></p>
+                      <p class="text-center text-uppercase fw-bold"><a class="text-decoration-none" href="#">{{button}}</a></p>
                   </div>
                   <!-- /footerTicket -->
               </div>
@@ -102,13 +102,13 @@ props:{
     .container {
         .ticket{
             height: 400px;
-            background-color: #F9F9F9;
+            background-color: #f3f3f3;
             .headerTicket{
                 height: 90px;
                 background-color: #E9E9E9; 
                 .priceTicket{
                     p{
-                        color: $scarlet-red-color;
+                        color: $primary-color;
                     }
                 }
             }
@@ -122,11 +122,15 @@ props:{
             }
             .footerTicket{
                 height: 70px;
-                background-color: $scarlet-red-color;
+                background-color: $primary-color;
                 line-height: 70px;
                 vertical-align: middle;
+                p a{
+                    color: $white-color;
+                }
                 p a:hover{
-                    border-bottom:px solid white;
+                    color: $hover-ticket-color;
+                    transition: color 1s;
                     cursor: pointer;
                 }
                 

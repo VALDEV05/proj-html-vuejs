@@ -47,12 +47,12 @@ export default {
         color: $icon-gray !important;
     }
     .link a{
-        color: $scarlet-red-color !important;
+        color: $primary-color !important;
         text-decoration: none;
         font-family: 'Bitter', serif;
         &:hover{
             cursor: pointer;
-            border-bottom: 1px solid $scarlet-red-color;
+            border-bottom: 1px solid $primary-color;
         }
     }
     .imgNews{

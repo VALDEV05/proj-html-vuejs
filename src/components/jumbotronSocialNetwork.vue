@@ -58,7 +58,7 @@ props:{
         }
         .btn_register {
             margin-top: 30px !important;
-            background-color: $scarlet-red-color;
+            background-color: $primary-color;
             color: $white-color;
             padding: 15px 40px;
         }

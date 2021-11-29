@@ -12,7 +12,7 @@
       <!-- /header -->
       <div id="timeline" class="mt-5">
           <div class="row">
-              <div class="col-2 day ps-4 py-3" v-for="day in days" :key="day.day">
+              <div class="col-2 day ps-4 py-3" v-for="(day, index) in days" :key="index">
                   <h1 class="m-0 py-2">{{day.day}}</h1>
                   <p class="m-0">{{day.date}}</p>
               </div>
@@ -56,7 +56,6 @@ export default {
         subtitle:String,
         days:Array,
         items:Array
-
     },
 }
 </script>
@@ -66,10 +65,10 @@ export default {
 .viewFull a{
     font-style: italic;
     font-family: 'Bitter', serif;
-    color: $scarlet-red-color !important;
+    color: $primary-color !important;
 }
 .day{
-    background-color: $scarlet-red-color;
+    background-color: $primary-color;
     border-left: 1px solid $black-color;
     color: $white-color;
     h1{

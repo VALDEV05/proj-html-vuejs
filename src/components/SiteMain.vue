@@ -144,7 +144,7 @@ export default {
             subtitle:'This conference run through all 4 days from 23-26 May 2016,We also provide free lunch and coffee break in each day',
             /* /speakers info */
             programDays:[
-                {day:'Day 1', date:'23 May 2016'},
+                {day:'Day 1', date:'23 May 2016', index:'1'},
                 {day:'Day 2', date:'23 May 2030'},
                 {day:'Day 3', date:'24 May 2030'},
                 {day:'Day 4', date:'25 May 2030'},

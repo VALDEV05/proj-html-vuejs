@@ -39,7 +39,7 @@ export default {
             }
             p a {
                 text-decoration: none;
-                color: $scarlet-red-color;
+                color: $primary-color;
                 font-family: 'Bitter', serif;
             }
         }

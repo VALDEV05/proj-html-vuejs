@@ -127,7 +127,7 @@ export default {
 
     }
     .checkBtn{
-      background-color: $scarlet-red-color;
+      background-color: $primary-color;
       width: 65%;
       padding: 12px 10px;
     }

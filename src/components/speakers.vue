@@ -60,13 +60,15 @@ export default {
 }
 </script>
 <style lang="scss">
+@import '@/assets/style/variables.scss';
+
 #speakers{
-    background-color: #F3F3F3;
+    background-color: #f6f6f6;
     height: 500px;
     .controls{
         padding-top: 50px;
         .btn_angle{
-        background-color: red;   
+        background-color: $primary-color;   
         height: 30px;
         width: 30px;
         padding: 20px;
@@ -120,7 +122,7 @@ export default {
     left: 50%;
     transform: translate(-50%, -75%);
     text-align: center;
-    background-color: red;
+    background-color: $primary-color;
 }
 .square{
     height: 70px;

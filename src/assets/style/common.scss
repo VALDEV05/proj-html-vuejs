@@ -18,8 +18,8 @@
 .link_header {
     color: black;
     &:hover {
-        color: $scarlet-red-color;
+        color: $primary-color;
         padding-bottom: 10px;
-        border-bottom: 3px solid $scarlet-red-color;
+        border-bottom: 3px solid $primary-color;
     }
 }

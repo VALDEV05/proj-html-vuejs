@@ -97,7 +97,7 @@ export default {
             font-size: 24px;
             margin-left: 15px;
             padding: 15px 20px;
-            background: $scarlet-red-color;
+            background: $primary-color;
             border: none;
             color: $white-color;
             text-transform: uppercase;

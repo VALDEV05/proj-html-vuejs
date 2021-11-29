@@ -49,12 +49,12 @@ export default {
             margin-top: -16px;
         }
         .check a{
-            color: $scarlet-red-color;
+            color: $primary-color;
             text-decoration: none;
             &:hover{
                 cursor: pointer;
                 /* text-decoration: underline; */
-                border-bottom: 1px solid $scarlet-red-color;
+                border-bottom: 1px solid $primary-color;
             }
         }
     }
