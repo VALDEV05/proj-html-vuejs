@@ -133,7 +133,7 @@ export default {
 <style  lang="scss">
 @import '@/assets/style/variables.scss';
 #siteFooter{
-  height: 500px;
+  height: 467;
   .main{
     background-color: $background-footer;
     h1{
