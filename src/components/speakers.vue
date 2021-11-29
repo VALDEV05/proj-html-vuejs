@@ -23,13 +23,16 @@
                             <div class="middle">
                                 <div class="text text-light d-flex">
                                     <div class="square mx-1">
-                                        <img src="https://img.icons8.com/carbon-copy/100/000000/twitter--v2.png" style="color:white;"/>
+                                        <a href="https://twitter.com/?lang=it"><img src="@/assets/img/twitter-brands-celest-white.svg"  alt=""></a>
+                                        
                                     </div>
                                     <div class="square mx-1">
-                                         <img src="@/assets/img/facebook-f-brands-white-h70.svg" alt="">
+                                        <a href="https://www.facebook.com/"><img src="@/assets/img/facebook-f-brands-white.svg" class="facebook" alt=""></a>
+                                         
                                     </div>
                                     <div class="square mx-1">
-                                         <img src="@/assets/img/linkedin-in-brands-white.svg" alt="">
+                                        <a href="https://www.linkedin.com/"><img src="@/assets/img/linkedin-in-brands-white.svg" alt=""></a>
+                                         
 
                                     </div>
                                 </div>
@@ -122,9 +125,19 @@ export default {
 .square{
     height: 70px;
     width: 70px;
-    border: 3px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
+    a{
+        height: 100%;
+        width: 100%;
+    }
+    img{
+        transform: scale(.8);
+    }
+
+    .facebook{
+        height: 90%;
+    }
 }
 </style>
